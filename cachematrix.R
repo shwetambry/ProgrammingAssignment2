@@ -9,8 +9,8 @@
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL      ## We set the inverse to null.
 	set <- function(y){    ## This function takes a matrix argument
-		x <- y         ## and set x equal to that argument
-		inv <- NULL    ## and inverse to NULL
+		x <<- y         ## and set x equal to that argument
+		inv <<- NULL    ## and inverse to NULL
 	}
 	get <- function(){     ## This function gets the value of matrix.
 		x
